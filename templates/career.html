@@ -1,0 +1,267 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  {% include 'header-1.html' %}
+ <style>
+  input[type='file']::file-selector-button {
+    background-color: #1e8a8a;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+</style>
+
+  <div id="smooth-wrapper" style="inset: 0px; width: 100%; height: 100%; position: fixed; overflow: hidden; pointer-events: none;">
+    <div id="smooth-content" style="translate: none; rotate: none; scale: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); box-sizing: border-box; width: 100%; overflow: visible;">
+      <main id="primary" class="site-main">
+       
+       <div class="tj-working-process section-gap section-gap-x" style="padding-top: 120px;padding-bottom: 0px;">
+        <div class="col-12">
+                <div class="sec-heading text-center" style="margin-bottom: 0px;">
+                  <span class="sub-title wow fadeInUp" data-wow-delay=".1s" style="color:#1e8a8a;border:1px dashed #1e8a8a;font-size: 25px;background-color: white;"><i class="tji-box" style="font-size: 25px;"></i>Careers</span>
+                  
+                </div>
+              </div>
+        
+        <section class="tj-careers-section section-gap" style="padding-top: 10px;padding-bottom: 90px;">
+          <div class="container">
+            <div class="row rg-30">
+              <div class="col-xl-4 col-md-6">
+                <div class="tj-careers wow fadeInUp" data-wow-delay="0.1s" >
+                  <h4 class="tj-careers-title" style="font-size: 18px;color: #1e8a8a;"><button style="height:50px;width:250px;background-color: #1e8a8a; color:white"><a href="">JDT1 - AI Engineer</span></a></button></h4>
+                  <div class="tj-careers-salary" style="font-size: 16px;font-weight: normal;">
+                    <p>We are looking for a Senior AI Engineer to join our team</p>
+                  </div>
+
+                  <div class="tj-careers-bottom">
+                    <div class="tj-careers-tag">
+                      <span><i class="tji-location"></i>Tiruppur</span>
+                       <span>Full time</span>
+                      <span style="color:#1e8a8a;" onclick="scrollToForm()">Apply Now <i class="tji-arrow-right-long" style="vertical-align: middle;"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="tj-careers wow fadeInUp" data-wow-delay="0.3s" >
+                  <h4 class="tj-careers-title" style="font-size: 18px;color: #1e8a8a;"><button style="height:50px;width:250px;background-color: #1e8a8a; color:white"><a href="">JDT2 - Python Developer</a></button></h4>
+                  <div class="tj-careers-salary" style="font-size: 16px;font-weight: normal;">
+                    <p>We are looking for a Senior Python Developer to join our team</p>
+                  </div>
+                  <div class="tj-careers-bottom">
+                    <div class="tj-careers-tag">
+                     
+                      <span><i class="tji-location"></i>Tiruppur</span>
+                       <span>Full time</span>
+                      <span style="color:#1e8a8a;"
+                      onclick="scrollToForm()">Apply Now <i class="tji-arrow-right-long" style="vertical-align: middle;"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="tj-careers wow fadeInUp" data-wow-delay="0.5s" >
+                  <h4 class="tj-careers-title" style="font-size: 18px;color: #1e8a8a;"><button style="height:50px;width:250px;background-color: #1e8a8a; color:white"><a href="">JDT3 - React JS Developer</a></button></h4>
+                  <div class="tj-careers-salary" style="font-size: 16px;font-weight: normal;">
+                    <p>We are looking for a Senior React JS Developer to join our team</p>
+                  </div>
+                  <div class="tj-careers-bottom">
+                    <div class="tj-careers-tag">
+                      
+                      <span><i class="tji-location"></i>Tiruppur</span>
+                      <span>Full time</span>
+                      <span style="color:#1e8a8a;"  onclick="scrollToForm()">Apply Now <i class="tji-arrow-right-long" style="vertical-align: middle;"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <div class="bg-shape-1">
+            <img src="{% static 'images/shape/pattern-2.svg'%}" alt="">
+          </div>
+          <div class="bg-shape-2">
+            <img src="{% static 'images/shape/pattern-3.svg'%}" alt="">
+          </div>
+      </div>
+        <!-- end: Careers Section -->
+
+        <!-- start: Contact Section -->
+        <section class="tj-contact-section h4-contact-section section-gap section-gap-x">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="contact-form style-3 wow fadeInUp" data-wow-delay=".4s">
+                  <div class="sec-heading style-4" >
+                     <h2 class="sec-title title-anim" style="font-size: 25px; display: inline-flex; align-items: center;">
+                      <img src="{% static 'images/careers1.png' %}" alt="Career Icon" 
+                                 style="width:35px; height:30px; margin-right:8px;">
+                             START <span style="color:#1e8a8a">YOUR JOURNEY</span>
+                           </h2>
+                  </div>
+                  <form id="contact-form-3">
+                    <div class="row wow fadeInUp" data-wow-delay=".5s">
+                      <div class="col-sm-6">
+                        <div class="form-input">
+                          <label class="cf-label">Full Name *</label>
+                          <input type="text" name="Name" required />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-input">
+                          <label class="cf-label">Email Address *</label>
+                          <input type="email" name="Email" required/>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-input">
+                          <label class="cf-label">Location *</label>
+                          <input type="text" name="Location" required />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-input">
+                          <label class="cf-label">Phone number *</label>
+                          <input type="tel" name="Phone" required/>
+                        </div>
+                      </div>
+                    
+                      <div class="col-sm-6">
+                        <div class="form-input">
+                          <div class="tj-nice-select-box">
+                            <div class="tj-select">
+                              <label class="cf-label">Position for Apply *</label>
+                              <select class="nice-select" name="Position" required>
+                                <option  value="">Select Position</option>
+                                <option value="AI Engineer">AI Engineer</option>
+                                <option value="Python Developer">Python Developer</option>
+                                <option value="React JS Developer">React JS Developer</option>
+                              
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-input">
+                          <label class="cf-label mb-2">Upload File *</label>
+                          <input type="file" name="Resume" accept=".pdf,.doc,.docx" required
+                          style="width: 100%;
+                           height:50px;
+                            padding: 12px; 
+                            border-radius: 8px;
+                             border: 1px solid rgba(255, 255, 255, 0.2); 
+                             background: rgba(255, 255, 255, 0.1); 
+                             backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color:#97a1aa; outline: none;" />
+
+                         
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-input message-input">
+                          <label class="cf-label">Message here... *</label>
+                          <textarea name="Message" id="message"></textarea>
+                        </div>
+                      </div>
+                      <div class="submit-btn">
+                        <button class="tj-primary-btn" type="submit" style="border-radius: 0px;">
+                          <span class="btn-text"><span>Send Message</span></span>
+                          <span class="btn-icon" style="border-radius: 0px;"><i class="tji-arrow-right-long"></i></span>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="testimonial-wrapper-3 wow fadeInUp" data-wow-delay=".5s">
+                  <div class="swiper testimonial-slider-2 h4-testimonial swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" style="height:670px;background-image: url(&quot;{% static 'images/service/service-1.webp' %}&quot;);background-size: cover;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-shape-1">
+            <img src="{% static 'images/shape/pattern-2.svg' %}" alt="" />
+          </div>
+          <div class="bg-shape-2">
+            <img src="{% static 'images/shape/pattern-3.svg' %}" alt="" />
+          </div>
+        </section>
+        <!-- end: Contact Section -->
+         <script>
+  function scrollToForm() {
+    const form = document.getElementById("contact-form-3");
+    if (!form) return;
+    const headerOffset = 100; // Adjust this to your fixed header height (e.g. 80 or 120)
+    const elementPosition = form.getBoundingClientRect().top + window.scrollY;
+    const offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  }
+</script>
+      </main>
+
+      <!-- start: Footer Section -->
+      {% include 'footer.html' %}
+      <!-- end: Footer Section -->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+document.getElementById("contact-form-3").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+
+    // Show SweetAlert loading spinner
+    Swal.fire({
+        title: 'Sending your application...',
+        html: '<img src="{% static "images/sendingmail.gif" %}" style="width:100px;height:100px;">',
+        showConfirmButton: false,
+        allowOutsideClick: false,
+        didOpen: () => {
+            Swal.showLoading();
+        }
+    });
+
+    fetch("/send-career/", {
+        method: "POST",
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        Swal.close(); // hide loading
+
+        if(data.status === "success") {
+            Swal.fire({
+                icon: 'success',
+                title: 'Application Sent!',
+                text: data.message
+            });
+            form.reset();
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops!',
+                text: data.message || 'Something went wrong.'
+            });
+        }
+    })
+    .catch(error => {
+        Swal.close(); // hide loading
+        Swal.fire({
+            icon: 'error',
+            title: 'Error!',
+            text: 'Unable to send your application. Please try again later.'
+        });
+    });
+});
+</script>
+
+{% endblock %}

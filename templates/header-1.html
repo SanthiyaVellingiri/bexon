@@ -1,0 +1,126 @@
+{% load static %}
+{% block content %}
+
+  <!-- start: Header Area -->
+  <header class="header-area header-1 section-gap-x">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="header-wrapper">
+            <!-- site logo -->
+<div class="site_logo d-flex align-items-center">
+  <a class="logo" href="{% url 'index' %}">
+    <img src="{% static 'images/logos/Techssoft logo.png' %}" alt="Techssoft logo" 
+         style="height:40px; width:auto;">
+  </a> 
+  <a href="{% url 'index' %}">
+    <div class="d-flex align-items-center">
+      <h4 style="color:#1e8a8a; margin:0;">TECHFASHION</h4>
+      <!-- <h6 style="color:#627474; font-size:15px; margin:0;">Innovations</h6> -->
+    </div>
+  </a>
+</div>
+
+
+            <!-- navigation -->
+            <div class="menu-area d-none d-lg-inline-flex align-items-center">
+              <div class="mean-push"></div><nav id="mobile-menu" class="mainmenu" style="display: none;">
+                <ul>
+                  <li class=""><a href="{% url 'index' %}">Home</a>
+                   
+                  </li>
+                 
+                    
+                  </li>
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li class=""><a href="{% url 'services' %}">Products</a></li>
+                 <!-- <li class=""><a href="{% url 'career' %}">Careers</a></li> -->
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- header right info -->
+            <div class="header-right-item d-none d-lg-inline-flex">
+             
+              <div class="header-button">
+                <a class="tj-primary-btn" href="{% url 'contact' %}">
+                  <span class="btn-text"><span>Let’s Talk</span></span>
+                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                </a>
+              </div>
+             
+            </div>
+
+            <!-- menu bar -->
+            <div class="menu_bar mobile_menu_bar d-lg-none">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </header>
+  <!-- end: Header Area -->
+
+  <!-- start: Header Area -->
+  <header class="header-area header-1 header-duplicate header-sticky section-gap-x">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="header-wrapper">
+            <!-- site logo -->
+            <div class="site_logo">
+              {% comment %} <a class="logo" href="{% url 'index' %}"><img src="{% static 'images/logos/logo-2.webp' %}" alt=""></a> {% endcomment %}
+             <a href="{% url 'index' %}"> <div class=" d-flex align-items-center">
+                        <h4 style="color: #1e8a8a;">TECHFASHION </h4><h6 style="color:#627474; font-size:15px;margin:0;">Innovations</h6>
+                      </div> </a>
+            </div>
+
+            <!-- navigation -->
+            <div class="menu-area d-none d-lg-inline-flex align-items-center">
+              <nav class="mainmenu">
+                <ul>
+                  <li class=""><a href="{% url 'index' %}">Home</a>                   
+                  </li>               
+                    
+                  </li>
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li class=""><a href="{% url 'services' %}">Products</a></li>
+                  <!-- <li class=""><a href="{% url 'career' %}">Careers</a></li> -->
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- header right info -->
+            <div class="header-right-item d-none d-lg-inline-flex">
+             
+              <div class="header-button">
+                <a class="tj-primary-btn" href="{% url 'contact' %}">
+                  <span class="btn-text"><span>Let’s Talk</span></span>
+                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                </a>
+              </div>
+             
+            </div>
+
+            <!-- menu bar -->
+            <div class="menu_bar mobile_menu_bar d-lg-none">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+  </header>
+  <!-- end: Header Area -->
+{% endblock content %}

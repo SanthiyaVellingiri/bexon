@@ -1,0 +1,317 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include "header-1.html" %}
+
+
+
+
+  <div id="smooth-wrapper" style="inset: 0px; width: 100%; height: 100%; position: fixed; overflow: hidden; pointer-events: none;">
+    <div id="smooth-content" style="translate: none; rotate: none; scale: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); box-sizing: border-box; width: 100%; overflow: visible;">
+      <main id="primary" class="site-main">
+
+        <div class="space-for-header"></div>
+
+         <!-- start: About Section -->
+        <section class="tj-about-section h6-about section-gap section-gap-x">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-12"style="margin-top:-50px;">
+                <div class="sec-heading text-center" >
+                <span class="sub-title text-white wow fadeInUp" data-wow-delay=".3s" 
+                style="font-size: 25px; color: #1e8a8a ! important; background: rgba(255, 255, 255, 0.1); 
+                             backdrop-filter: blur(10px);"><i class="tji-box"style="font-size: 25px;"></i> ABOUT US</span>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6">
+                <div class="about-content-area  h6-about-content  style-1 wow fadeInLeft" data-wow-delay=".2s">
+                  <div class="sec-heading style-2 style-6">
+                    <span class="sub-title  wow fadeInUp" data-wow-delay=".3s" style="font-size:18px"><i class="tji-box"></i>Techssoft</span>
+                    <h2 class="sec-title title-anim">Empowering Your Business
+                       With <span style="color:#1e8a8a">Techssoft</span> IT Solutions
+                    </h2>
+                    <p class="desc  wow fadeInUp" data-wow-delay=".8s">At Techssoft, we recognize the unique needs of every business. We deliver customized IT solutions designed to meet those needs precisely. Our IT services do more than support operations—they transform businesses. We are committed to driving your success.
+                    </p>
+                  </div>
+                    <div class="h6-about-funfact-wrapper">
+                    <div class="h6-about-funfact">
+                      <div class="countup-item">
+                        <div class="inline-content">
+                          <span class="countup-number odometer odometer-auto-theme" data-count="20"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">20</span></span></span></span></span></div></span>
+                          <span class="count-plus">M</span>
+                        </div>
+                        <span class="count-text">Reach Worldwide empower dreams everywhere.</span>
+                      </div>
+                      <div class="countup-item">
+                        <div class="inline-content">
+                          <span class="countup-number odometer odometer-auto-theme" data-count="8.5"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">8.5</span></span></span></span></span></div></span>
+                          <span class="count-plus">X</span>
+                        </div>
+                        <span class="count-text">Faster Growth starts smart solutions today.</span>
+                      </div>
+
+                    </div>
+                    <div class="h6-about-funfact-shape">
+                      <img src=" {% static  'images/shape/about-counter-shape-blur.svg' %}" alt="">
+                    </div>
+                  </div>
+
+                  <div class="btn-area wow fadeInUp" data-wow-delay=".8s" >
+                    <a class="tj-primary-btn" style="height: 40px; width:49%">
+                          <span class="btn-text"><span>Generative AI</span></span>
+                        </a>
+                         <a class="tj-primary-btn" style="height: 40px; width:49%">
+                          <span class="btn-text" ><span>AI Automation </span></span>
+                         </a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="about-img-area h6-about-img wow fadeInLeft" data-wow-delay=".2s">
+                  <div class="about-img overflow-hidden  wow fadeInRight" data-wow-delay=".8s">
+                    <img data-speed=".8" src="{% static  'images/about/h6-about-banner.webp'%}" alt="" data-lag="0" style="translate: none; rotate: none; scale: none; transform: translate(0px, -121.875px); will-change: transform;">
+                  </div>
+                  <div class="box-area h6-about-box  ">
+                    <div class="customers-box wow fadeInUp" data-wow-delay="1s">
+                      <div class="customers">
+                        <ul>
+                          <li class="wow fadeInLeft" data-wow-delay=".5s"><img src=" {% static  'images/testimonial/client-1.webp' %}" alt=""></li>
+                          <li class="wow fadeInLeft" data-wow-delay=".6s"><img src=" {% static  'images/testimonial/client-2.webp' %}" alt=""></li>
+                          <li class="wow fadeInLeft" data-wow-delay=".7s"><img src=" {% static  'images/testimonial/client-3.webp' %}" alt=""></li>
+                          <li class="wow fadeInLeft" data-wow-delay=".8s"><span><i class="tji-plus"></i></span></li>
+                        </ul>
+                      </div>
+
+                      <h5 class="customers-text wow fadeInUp" data-wow-delay=".5s">We have 100+ happy customer.</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-shape-1">
+            <img src=" {% static  'images/shape/pattern-2.svg' %}" alt="">
+          </div>
+          <div class="bg-shape-2">
+            <img src=" {% static  'images/shape/pattern-3.svg' %}" alt="">
+          </div>
+          <div class="bg-shape-3">
+            <img src=" {% static  'images/shape/shape-blur.svg' %}" alt="">
+          </div>
+
+        </section>
+        <!-- end: About Section -->
+
+           <!-- start: About Section -->
+        <section class="tj-about-section-2 section-gap section-gap-x ">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 order-lg-1 order-2">
+                <div class="about-img-area style-2 wow fadeInLeft" data-wow-delay=".3s">
+                  <div class="about-img overflow-hidden">
+                    <img data-speed=".8" src="{% static 'images/about/about-5.webp'%}" alt="" data-lag="0" style="translate: none; rotate: none; scale: none; transform: translate(0px, -123.75px); will-change: transform;">
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 order-lg-2 order-1">
+                <div class="about-content-area">
+                  <div class="sec-heading style-3">
+                    <span class="sub-title wow fadeInUp" data-wow-delay=".3s"   style="font-size:18px"><i class="tji-box"></i>Get to Know
+                      Us</span>
+                    <h2 class="sec-title title-anim"> Sustainable Corporate <span style="color:#1e8a8a"> Success
+                      Worldwide.</span>
+                    </h2>
+                  </div>
+                </div>
+                <div class="about-bottom-area">
+                  <div class="mission-vision-box wow fadeInLeft" data-wow-delay=".5s">
+                    <h4 class="title">Our Mission</h4>
+                    <p class="desc">our mission is empower businesses through innovate best solution, exceptional
+                      service.
+                    </p>
+                    <ul class="list-items">
+                      <li><i class="tji-list"></i>Innovation &amp; Excellence</li>
+                      <li><i class="tji-list"></i>Exceptional Customer</li>
+                      <li><i class="tji-list"></i>Business Growth</li>
+                    </ul>
+                  </div>
+                  <div class="mission-vision-box wow fadeInRight" data-wow-delay=".5s">
+                    <h4 class="title">Our Vision</h4>
+                    <p class="desc">Our vision is to become a global leader in providing transformative business
+                      solutions.
+                    </p>
+                    <ul class="list-items">
+                      <li><i class="tji-list"></i>Global Leadership</li>
+                      <li><i class="tji-list"></i>Transformative Impact</li>
+                      <li><i class="tji-list"></i>Sustainable Success</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="about-btn-area wow fadeInUp" data-wow-delay=".5s">
+                  <a class="tj-primary-btn" href="{% url 'about' %}">
+                    <span class="btn-text"><span>Learn More About Us</span></span>
+                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-shape-1">
+            <img src="{% static 'images/shape/pattern-2.svg'%}" alt="">
+          </div>
+          <div class="bg-shape-2">
+            <img src="{% static 'images/shape/pattern-3.svg'%}" alt="">
+          </div>
+        </section>
+        <!-- end: About Section -->
+       
+
+         <!-- start: Service Section -->
+        <section class="tj-about-section-2 section-gap section-gap-x">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="sec-heading style-3 text-center">
+                  {% comment %} <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Our Solutions</span> {% endcomment %}
+                  <h2 class="sec-title title-anim" style="color: #1e8a8a;font-size:35px">Empowering Enterprises with <span style="color:black">Techssoft</span> IT Solutions.</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="service-wrapper">
+                  <div class="service-item style-3 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="service-content-wrap">
+                      <div class="service-title">
+                        <div class="service-icon">
+                          <i class="tji-service-1"></i>
+                        </div>
+                        <h4 class="title"><a href="service-details.html">Business Strategy Development</a></h4>
+                      </div>
+                      <div class="service-content">
+                        <p class="desc">Through a combination of data-driven insights and innovative approaches, we work
+                          closely with you to develop customized.</p>
+                      </div>
+                    </div>
+                    <div class="service-reveal-bg" data-bg-image="{% static 'images/service/service-2.webp'%}" style="background-image: url(&quot;{% static 'images/service/service-2.webp'%}&quot;);"></div>
+                  </div>
+                   <div class="service-item style-3 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="service-content-wrap">
+                      <div class="service-title">
+                        <div class="service-icon">
+                          <i class="tji-service-1"></i>
+                        </div>
+                        <h4 class="title"><a href="service-details.html">Digital Transformation</a></h4>
+                      </div>
+                      <div class="service-content">
+                        <p class="desc">Leveraging automation, AI, and modern IT frameworks to streamline processes, enhance customer experience, 
+                          and boost overall productivity.</p>
+                      </div>
+                    </div>
+                    <div class="service-reveal-bg" data-bg-image="{% static 'images/service/service-2.webp'%}" style="background-image: url(&quot;{% static 'images/service/service-2.webp'%}&quot;);"></div>
+                  </div>
+                   <div class="service-item style-3 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="service-content-wrap">
+                      <div class="service-title">
+                        <div class="service-icon">
+                          <i class="tji-service-1"></i>
+                        </div>
+                        <h4 class="title"><a href="service-details.html">Advanced Cybersecurity</a></h4>
+                      </div>
+                      <div class="service-content">
+                        <p class="desc">Comprehensive protection with firewalls, intrusion detection, encryption, and compliance
+                           management to safeguard against evolving threats.</p>
+                      </div>
+                    </div>
+                    <div class="service-reveal-bg" data-bg-image="{% static 'images/service/service-6.webp'%}" style="background-image: url(&quot;{% static 'images/service/service-6.webp'%}&quot;);"></div>
+                  </div>
+                   <div class="service-item style-3 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="service-content-wrap">
+                      <div class="service-title">
+                        <div class="service-icon">
+                          <i class="tji-service-1"></i>
+                        </div>
+                        <h4 class="title"><a href="service-details.html">Cloud Services & Virtualization</a></h4>
+                      </div>
+                      <div class="service-content">
+                        <p class="desc">Secure, cost-effective cloud migration, hosting, and storage solutions that improve collaboration, accessibility, and operational agility.</p>
+                      </div>
+                    </div>
+                    <div class="service-reveal-bg" data-bg-image="{% static 'images/service/service-4.webp'%}" style="background-image: url(&quot;{% static 'images/service/service-4.webp'%}&quot;);"></div>
+                  </div>
+                 
+                </div>
+                <div class="service-btn-area text-center wow fadeInUp" data-wow-delay=".3s">
+                  <a class="tj-primary-btn" href="{% url 'services' %}" style="border-radius: 0px;">
+                    <span class="btn-text" ><span>More Services</span></span>
+                    <span class="btn-icon" style="border-radius: 0px;"><i class="tji-arrow-right-long"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="bg-shape-1">
+            <img src="{% static 'images/shape/pattern-2.svg'%}" alt="">
+          </div>
+          <div class="bg-shape-2">
+            <img src="{% static 'images/shape/pattern-3.svg'%}" alt="">
+          </div>
+        </section>
+        <!-- end: Service Section -->
+
+
+         
+        
+      
+
+       
+       
+
+        <!-- start: Cta Section -->
+        <section class="tj-cta-section h7-cta section-gap-x">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="cta-area h7-cta-inner">
+                        <div class="cta-content">
+                          <h6 class="title text-anim" style="font-size:40px">Enhance your <span style="color:#1e8a8a">IT strategy</span> today-Speak With Our Experts!</h6>
+                          <div class="cta-btn wow fadeInUp" data-wow-delay=".6s">
+                            <a class="tj-primary-btn tj-primary-btn-lg" href="{% url 'contact' %}">
+                              <span class="btn-text"><span>Contact us</span></span>
+                              <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-shape-3">
+            <img src="{% static 'images/shape/shape-blur.svg'%}" alt="">
+          </div>
+        </section>
+        <!-- end: Cta Section -->
+   
+      </main>
+
+      <!-- start: Footer Section -->
+      {% include 'footer.html' %}
+      <!-- end: Footer Section -->
+    </div>
+  </div>
+  
+{% endblock content %}

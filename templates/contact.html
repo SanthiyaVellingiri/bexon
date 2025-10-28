@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% include "header-1.html" %}
+
+   
+     
+                
+         
+
+         <!-- start: Contact Section -->
+        <section class="tj-contact-section h4-contact-section section-gap section-gap-x" style="border-radius: 0px;">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-12"style="margin-top:-50px;">
+                <div class="sec-heading text-center" >
+                <span class="sub-title text-white wow fadeInUp" data-wow-delay=".3s" style="font-size: 25px; color: #1e8a8a ! important; background: rgba(255, 255, 255, 0.1); 
+                             backdrop-filter: blur(10px);"><i class="tji-box"style="font-size: 25px;"></i> CONTACT US</span>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="row row-gap-2" >
+              <div class="col-xl-4 col-lg-6 col-sm-6 "> 
+                <div class="contact-item style-2 wow fadeInUp" data-wow-delay=".3s" >
+                  <div class="">
+                    <i class="tji-location-3" style="font-size:32px;color:#1e8a8a"></i>
+                  </div>
+                  <h3 class="contact-title" style="color:white">Our Location</h3>
+                  <p style="color:#1e8a8a;">Tiruppur - 641 602,Tamilnadu.</p>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-6">
+                <div class="contact-item style-2 wow fadeInUp" data-wow-delay=".5s">
+                  <div class="">
+                    <i class="tji-envelop" style="font-size:32px;color:#1e8a8a"></i>
+                  </div>
+                  <h3 class="contact-title" style="color:white">Email us</h3>
+                  <ul class="contact-list">
+                    <li ><a  style="color:#1e8a8a;" href="mailto:tech@techssoftinnovations.com">tech@techssoftinnovations.com</a></li>
+                   
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-sm-6">
+                <div class="contact-item style-2 wow fadeInUp" data-wow-delay=".7s">
+                  <div class="">
+                    <i class="tji-phone" style="font-size:32px;color:#1e8a8a"></i>
+                  </div>
+                  <h3 class="contact-title" style="color:white">Call us</h3>
+                  <ul class="contact-list">
+                    <li ><a style="color:#1e8a8a;" href="tel:9962976444">+91 9962976444</a></li>
+                 
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-7" style="margin-top:50px;">
+                <div class="contact-form style-3 wow fadeInUp" data-wow-delay=".4s">
+                  <div class="sec-heading style-4">
+          
+          
+                    <h2 class="sec-title title-anim d-flex align-item-center" style="font-size:25px;">
+                        <img width="30px" height="30px" src="{% static  'images/getintouch.png' %}"/> GET IN <span style="color:#1e8a8a;">TOUCH</span></h2>
+                  
+                  </div>
+                  <form id="contact-form-3">
+                    <div class="row wow fadeInUp" data-wow-delay=".5s">
+                      <div class="col-sm-6">
+                        <div class="form-input">
+                          <label class="cf-label">Name *</label>
+                          <input type="text" name="Name" required>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-input">
+                          <label class="cf-label">Email Address *</label>
+                          <input type="email" name="Email" required>
+                        </div>
+                      </div>
+                     
+
+                       <div class="col-sm-6">
+                        <div class="form-input">
+                          <label class="cf-label">Location *</label>
+                          <input type="text" name="Location" required>
+                        </div>
+                      </div>
+
+                       <div class="col-sm-6">
+                        <div class="form-input">
+                          <label class="cf-label">Phone number *</label>
+                          <input type="tel" name="Phone" required>
+                        </div>
+                      </div>
+                     
+                      <div class="col-sm-12">
+                        <div class="form-input message-input">
+                          <label class="cf-label">Message here... *</label>
+                          <textarea name="Message" id="message" ></textarea>
+                        </div>
+                      </div>
+                      <div class="submit-btn" >
+                        <button class="tj-primary-btn" type="submit" style="border-radius: 0px">
+                          <span class="btn-text"><span>Send Message</span></span>
+                          <span class="btn-icon" style="border-radius: 0px"><i class="tji-arrow-right-long"></i></span>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-5"  style="margin-top:50px;">
+                <div class="map-area wow fadeInUp" data-wow-delay=".3s">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d244.68896707496225!2d77.33649823312173!3d11.111628407601883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1758516367297!5m2!1sen!2sin"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-shape-1">
+            <img src="{% static  'images/shape/pattern-2.svg' %}" alt="">
+          </div>
+          <div class="bg-shape-2">
+            <img src="{% static  'images/shape/pattern-3.svg' %}" alt="">
+          </div>
+        </section>
+        <!-- end: Contact Section -->
+
+        
+      </main>
+
+      <!-- start: Footer Section -->
+        {% include 'footer.html' %}
+      <!-- end: Footer Section -->
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+document.getElementById("contact-form-3").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+
+    // Show SweetAlert loading
+    Swal.fire({
+        title: 'Sending your message...',
+        html: '<img src="{% static "images/sendingmail.gif" %}" style="width:100px;height:100px;">',
+        showConfirmButton: false,
+        allowOutsideClick: false,
+        didOpen: () => {
+            Swal.showLoading();
+        }
+    });
+
+    fetch("/send-contact/", {
+        method: "POST",
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        Swal.close(); // Close loading
+
+        if(data.status === "success"){
+            Swal.fire({
+                icon: 'success',
+                title: 'Message Sent!',
+                text: 'Thank you for contacting us. We’ll get back to you soon.'
+            });
+            form.reset();
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops!',
+                text: data.message || 'Something went wrong.'
+            });
+        }
+    })
+    .catch(error => {
+        Swal.close(); // Close loading
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Error!',
+            text: 'Unable to send message. Please try again later.'
+        });
+    });
+});
+</script>
+
+
+{% endblock content %}
