@@ -71,7 +71,7 @@ START: Theme Default CSS
     --tj-fs-h6: 18px;
     --tj-color-common-white: #ffffff;
     --tj-color-common-black: #000000;
-    --tj-color-heading-primary: #0c1e21;
+    --tj-color-heading-primary: #bd3698;
     --tj-color-text-body: #364e52;
     --tj-color-text-body-2: #a9b8b8;
     --tj-color-text-body-3: #67787a;
@@ -114,7 +114,7 @@ body {
   font-size: var(--tj-fs-body);
   font-weight: normal;
   color: var(--tj-color-text-body);
-  background-color: var(--tj-color-grey-1);
+  background-color: #fff;
   line-height: 1.5;
 }
 
@@ -216,17 +216,12 @@ h6 {
   line-height: 1.444;
 }
 
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  font-size: inherit;
-  color: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  display: block;
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-size: inherit;
+    color: #bd3698;
+    font-weight: inherit;
+    line-height: inherit;
+    display: block;
 }
 
 h1:hover a,
@@ -968,7 +963,7 @@ START: Theme Header CSS
   --bs-gutter-x: 0;
 }
 .header-area.header-2.header-absolute .header-wrapper {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color:#f8f9fa !important;
   backdrop-filter: blur(10px);
   padding: 0 20px;
   border-radius: 14px;
@@ -1611,10 +1606,14 @@ START: Theme Header CSS
 }
 
 .header-2.header-absolute .mainmenu > ul > li > a {
-  color: var(--tj-color-common-white);
+  color: #000;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+/* .header-2.header-absolute .mainmenu > ul > li > a {
+  color: #000 !important;
+} */
+
 .header-2.header-absolute .mainmenu > ul > li.menu-item-has-children > a::after, .header-2.header-absolute .mainmenu > ul > li.has-dropdown > a::after {
   color: currentColor;
   top: 35px;
@@ -2635,7 +2634,7 @@ START: Theme Footer CSS
   opacity: 1;
 }
 .social-links.style-3 ul li a {
-  background-color: var(--tj-color-common-white);
+  background-color: #bd3698;
   opacity: 0.3;
 }
 .social-links.style-3 ul li a i {
@@ -3906,7 +3905,7 @@ START: Theme Search CSS
   position: relative;
 }
 .hamburger_menu .mean-nav ul li a {
-  color:#1e8a8a;
+  color:#bd3698;
   width: 100%;
   font-size: 16px;
   line-height: 1;
@@ -4153,7 +4152,7 @@ START: Preloader CSS
   inset-inline-start: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #2d0533;
   z-index: 100000000;
   color: #fdfdf9;
   -webkit-user-select: none;
@@ -4178,7 +4177,7 @@ START: Preloader CSS
   inset-inline-start: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #2d0533;
   z-index: 99999999;
   opacity: 1;
   -webkit-animation: tj-fade-out 2s forwards;
@@ -4272,13 +4271,13 @@ START: Preloader CSS
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: #00ffc2;
+  background-color: #bd3698;
   bottom: 0;
   border-radius: 50%;
   -webkit-filter: blur(12px);
           filter: blur(12px);
-  -webkit-box-shadow: 0 4px 20px 0 #20e7b7;
-          box-shadow: 0 4px 20px 0 #20e7b7;
+  -webkit-box-shadow: 0 4px 20px 0 #bd3698;
+          box-shadow: 0 4px 20px 0 #bd3698;
   -webkit-transition: 0.7s cubic-bezier(0.77, 0, 0.175, 1);
   transition: 0.7s cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-animation-play-state: paused;
@@ -4292,7 +4291,7 @@ START: Preloader CSS
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #00ffc2;
+  background-color: #bd3698;
   -webkit-animation: tj-bounce-anim 1s linear infinite;
           animation: tj-bounce-anim 1s linear infinite;
   -webkit-box-shadow: 0 0 12px 0 #fdfdf9;
@@ -4323,8 +4322,8 @@ START: Preloader CSS
           transform: translate(-50%, 50%);
   border-radius: 50%;
   background-color: rgba(0, 255, 194, 0.1);
-  -webkit-box-shadow: 0 0 20px 0 #20e7b7;
-          box-shadow: 0 0 20px 0 #20e7b7;
+  -webkit-box-shadow: 0 0 20px 0 #bd3698;
+          box-shadow: 0 0 20px 0 #bd3698;
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }
@@ -7530,10 +7529,10 @@ START: Heading CSS
     color: #bd3698;
 }
 .sec-heading.style-2 .sub-title {
-  color: #bd3698;
-  background-color: var(--tj-color-common-white);
-  border: 0;
-  padding: 7px 10px;
+    color: #f8f9fa;
+    background-color: #bd3698;
+    border: 0;
+    padding: 7px 10px;
 }
 .sec-heading.style-3 .sub-title {
   color: var(--tj-color-theme-primary);
@@ -9506,7 +9505,7 @@ START: About CSS
   z-index: -1;
 }
 .customers-box.style-2 ul li span {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #bd3698;
 }
 .customers-box.style-2 .customers-text {
   max-width: 250px;
@@ -9554,14 +9553,18 @@ START: About CSS
   font-weight: var(--tj-fw-medium);
 }
 .countup-item.style-2 .inline-content {
-  color: #2d0533;
-  margin: 11px 0 10px;
+    color: #bd3698;
+    margin: 11px 0 10px;
 }
 .countup-item.style-2 .inline-content .odometer {
-  color: var(--tj-color-heading-primary);
+  color: #bd3698;
 }
+.odometer .odometer-value {
+  color: #bd3698 !important;
+}
+
 .countup-item.style-2 .inline-content .odometer .odometer-digit, .countup-item.style-2 .inline-content .odometer span {
-    color: #2d0533;
+    color: #bd3698 !important;
 }
 .countup-item.style-2 .count-icon {
   width: 80px;
@@ -9772,10 +9775,10 @@ START: Services CSS
   margin-bottom: 20px;
   -webkit-transition: none;
   transition: none;
-  color: #1e8a8a;
+  color: #bd3698;
 }
 .service-item .title a:hover {
-  color: white;
+  color: #bd3698;
 }
 .service-item .desc {
   margin-bottom: 0;
@@ -10055,7 +10058,7 @@ START: Services CSS
   border-color: rgba(255, 255, 255, 0.15);
 }
 .service-item.style-3:hover .service-icon i {
-  color: var(--tj-color-common-white);
+  color: #bd3698;
 }
 .service-item.style-3:hover .desc {
   color: var(--tj-color-grey-1);
@@ -10112,9 +10115,8 @@ START: Services CSS
 .service-item.style-4:hover .title {
   color: var(--tj-color-common-white);
 }
-.service-item.style-4:hover .desc a,
-.service-item.style-4:hover .title a {
-  color: var(--tj-color-common-white);
+.service-content-wrap .service-title .service-icon i {
+    color: #bd3698;
 }
 .service-item.style-4:hover .text-btn .btn-text {
   color: var(--tj-color-common-white);
@@ -10143,7 +10145,7 @@ START: Services CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   line-height: 1;
-  color: var(--tj-color-theme-primary);
+  color: #bd3698;
   margin-top: 6px;
 }
 
@@ -10178,7 +10180,7 @@ START: Services CSS
   transition: all 0.6s ease-in-out;
 }
 .service-content-wrap .service-title .service-icon i {
-  color: var(--tj-color-theme-primary);
+  color: #bd3698;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .service-content-wrap .service-title .service-icon {
@@ -10269,13 +10271,64 @@ START: Services CSS
   .service-reveal-bg {
     display: none;
   }
+}.service-reveal-bg {
+  position: absolute;
+  top: 50%;
+  inset-inline-start: 50%;
+  width: 291px;
+  height: 303px;
+  opacity: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  pointer-events: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+      -ms-transform: translate(-50%, -50%) scale(0.9);
+          transform: translate(-50%, -50%) scale(0.9);
+  -webkit-transition: opacity 0.6s, -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.6s, -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.6s, transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.6s, transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  z-index: 5;
+}
+.service-reveal-bg:first-child {
+  margin-top: 30px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .service-reveal-bg {
+    width: 260px;
+    height: 270px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .service-reveal-bg {
+    display: none;
+  }
 }
 
+/* 🔹 Adjusted to align top and bottom images perfectly */
 .service-item:first-child .service-reveal-bg {
-  margin-top: 40px;
+  margin-top: 10px; /* was 40px — moved slightly upward */
 }
 .service-item:last-child .service-reveal-bg {
-  margin-top: -40px;
+  margin-top: 10px; /* was -40px — moved downward for alignment */
+}
+
+.service-item:hover .service-reveal-bg {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+
+.service-item:first-child .service-reveal-bg {
+  margin-top: 0px;
+}
+.service-item:last-child .service-reveal-bg {
+  margin-top: 0px;
 }
 .service-item:hover .service-reveal-bg {
   opacity: 1;
@@ -12970,11 +13023,11 @@ START: Working process CSS
 START: Contact CSS
 ----------------------------------------*/
 .tj-contact-section {
-  background-color: var(--tj-color-theme-dark);
-  border-radius: 12px;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
+    background-color: #2d0533;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 .tj-contact-section .sec-heading {
   -webkit-margin-start: 0;
@@ -17910,7 +17963,7 @@ START: Contact CSS
   border-color: var(--tj-color-theme-primary);
 }
 .contact-form.style-3 .form-input .cf-label {
-  color: var(--tj-color-text-body-2);
+  color: #f8f9fa;
   position: unset;
   margin-bottom: 10px;
 }
@@ -21962,11 +22015,11 @@ START: Award CSS
 START: Testimonial CSS
 ----------------------------------------*/
 .h6-testimonial {
-  background-color: var(--tj-color-theme-dark);
-  position: relative;
-  z-index: 1;
-  border-radius: 12px;
-  overflow: hidden;
+    background-color: #2d0533;
+    position: relative;
+    z-index: 1;
+    border-radius: 12px;
+    overflow: hidden;
 }
 .h6-testimonial .container {
   --bs-gutter-x: 30px;
@@ -23433,7 +23486,7 @@ START: Blog CSS
 START: CTA CSS
 ----------------------------------------*/
 .h7-cta {
-  background: url("../images/h7-cta-bg.webp") no-repeat center;
+  background: #2d0533;
   background-size: cover;
   position: relative;
   overflow: hidden;
