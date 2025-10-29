@@ -48,77 +48,54 @@ START: Theme Default CSS
 ----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 :root {
-  /**
-     @Font-Family Declaration
-   */
-  --tj-ff-body: 'Mona Sans', sans-serif;;
-  --tj-ff-heading: 'Mona Sans', sans-serif;;
-  --tj-ff-fontawesome: "Font Awesome 6 Pro";
-  /**
-     @Font-weight Declaration
-   */
-  --tj-fw-normal: normal;
-  --tj-fw-thin: 100;
-  --tj-fw-elight: 200;
-  --tj-fw-light: 300;
-  --tj-fw-regular: 400;
-  --tj-fw-medium: 500;
-  --tj-fw-sbold: 600;
-  --tj-fw-bold: 700;
-  --tj-fw-ebold: 800;
-  --tj-fw-black: 900;
-  /**
-     @Font-Size Declaration
-   */
-  --tj-fs-body: 16px;
-  --tj-fs-p: 16px;
-  --tj-fs-h1: 74px;
-  --tj-fs-h2: 48px;
-  --tj-fs-h3: 32px;
-  --tj-fs-h4: 24px;
-  --tj-fs-h5: 20px;
-  --tj-fs-h6: 18px;
-  /**
-     @Color Declaration
-   */
-  :root {
-  /* 🎨 Color Declaration */
-  --tj-color-common-white: #ffffff;
-  --tj-color-common-black: #000000;
-
-  /* 🏷️ Text Colors */
-  --tj-color-heading-primary: #2d0533;
-  --tj-color-text-body: #364e52;
-  --tj-color-text-body-2: #a9b8b8;
-  --tj-color-text-body-3: #67787a;
-  --tj-color-text-body-4: #18292c;
-  --tj-color-text-body-5: rgba(255, 255, 255, 0.8);
-
-  /* 🌿 Theme Colors (updated with #2d0533) */
-  --tj-color-theme-primary: #2d0533 ;
-  --tj-color-theme-bg: #f3eaf5; /* soft tint background version */
-  --tj-color-theme-bg-2: #e6d4eb; /* lighter variation */
-  --tj-color-theme-bg-3: #2d0533; /* dark solid background */
-  --tj-color-theme-dark: #210327;
-  --tj-color-theme-dark-2: #1a021f;
-  --tj-color-theme-dark-3: #3a1a45;
-  --tj-color-theme-dark-4: #56335f;
-  --tj-color-theme-dark-5: #705678;
-
-  /* ❤️ Accent Colors */
-  --tj-color-red-1: #ff0000;
-
-  /* ⚙️ Neutral & Border Colors */
-  --tj-color-grey-1: #ecf0f0;
-  --tj-color-grey-2: #a9b8b8;
-  --tj-color-grey-3: rgba(255, 255, 255, 0.1);
-  --tj-color-border-1: #c9d1d1;
-  --tj-color-border-2: #3b2a40;
-  --tj-color-border-3: rgba(255, 255, 255, 0.15);
-  --tj-color-border-4: rgba(255, 255, 255, 0.2);
-  --tj-color-border-5: rgba(45, 5, 51, 0.15);
+    --tj-ff-body: 'Mona Sans', sans-serif;
+    --tj-ff-heading: 'Mona Sans', sans-serif;
+    --tj-ff-fontawesome: "Font Awesome 6 Pro";
+    --tj-fw-normal: normal;
+    --tj-fw-thin: 100;
+    --tj-fw-elight: 200;
+    --tj-fw-light: 300;
+    --tj-fw-regular: 400;
+    --tj-fw-medium: 500;
+    --tj-fw-sbold: 600;
+    --tj-fw-bold: 700;
+    --tj-fw-ebold: 800;
+    --tj-fw-black: 900;
+    --tj-fs-body: 16px;
+    --tj-fs-p: 16px;
+    --tj-fs-h1: 74px;
+    --tj-fs-h2: 48px;
+    --tj-fs-h3: 32px;
+    --tj-fs-h4: 24px;
+    --tj-fs-h5: 20px;
+    --tj-fs-h6: 18px;
+    --tj-color-common-white: #ffffff;
+    --tj-color-common-black: #000000;
+    --tj-color-heading-primary: #0c1e21;
+    --tj-color-text-body: #364e52;
+    --tj-color-text-body-2: #a9b8b8;
+    --tj-color-text-body-3: #67787a;
+    --tj-color-text-body-4: #18292c;
+    --tj-color-text-body-5: rgba(255, 255, 255, 0.8);
+    --tj-color-theme-primary: #2d0533;
+    --tj-color-theme-bg: #d8e5e5;
+    --tj-color-theme-bg-2: #cee0e0;
+    --tj-color-theme-bg-3: #202e30;
+    --tj-color-theme-dark: #0c1e21;
+    --tj-color-theme-dark-2: #18292c;
+    --tj-color-theme-dark-3: #364e52;
+    --tj-color-theme-dark-4: #67787a;
+    --tj-color-theme-dark-5: #676e7a;
+    --tj-color-red-1: #ff0000;
+    --tj-color-grey-1: #ecf0f0;
+    --tj-color-grey-2: #a9b8b8;
+    --tj-color-grey-3: rgba(255, 255, 255, 0.1019607843);
+    --tj-color-border-1: #c9d1d1;
+    --tj-color-border-2: #313d3d;
+    --tj-color-border-3: rgba(255, 255, 255, 0.1490196078);
+    --tj-color-border-4: rgba(255, 255, 255, 0.2);
+    --tj-color-border-5: rgba(30, 138, 138, 0.1490196078);
 }
-
 
 * {
   margin: 0;
@@ -129,6 +106,7 @@ START: Theme Default CSS
 
 .site-main {
   position: relative;
+  background:#fff;
 }
 
 body {
@@ -718,28 +696,28 @@ img {
 /**
   Buttons CSS
 */
-tj-primary-btn {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex
-;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    gap: 10px;
-    position: relative;
-    background-color: #2d0533;
-    font-size: 16px;
-    font-weight: var(--tj-fw-sbold);
-    padding: 5px 5px 5px 25px;
-    text-align: center;
-    line-height: 1;
-    z-index: 2;
-    overflow: hidden;
-    white-space: nowrap;
+.tj-primary-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  position: relative;
+  background-color: #bd3698;
+  font-size: 16px;
+  font-weight: var(--tj-fw-sbold);
+  padding: 5px 5px 5px 25px;
+  text-align: center;
+
+  line-height: 1;
+  z-index: 2;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .tj-primary-btn .btn-text {
   color: var(--tj-color-common-white);
@@ -774,12 +752,11 @@ tj-primary-btn {
   width: 42px;
   height: 42px;
   overflow: hidden;
-  background-color: var(--tj-color-theme-dark);
- 
+  background-color: #fff; 
 }
 .tj-primary-btn .btn-icon i {
-  color: var(--tj-color-common-white);
-  -webkit-transform: rotate(-45deg);
+    color: #bd3698;
+      -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transition: all 0.3s ease-in-out;
@@ -3929,7 +3906,7 @@ START: Theme Search CSS
   position: relative;
 }
 .hamburger_menu .mean-nav ul li a {
-  color:#2d0533;
+  color:#1e8a8a;
   width: 100%;
   font-size: 16px;
   line-height: 1;
@@ -7497,7 +7474,7 @@ START: Heading CSS
   -webkit-margin-end: auto;
           margin-inline-end: auto;
   width: 100%;
-  margin-bottom: 52px;
+  margin-bottom: 20px;
 }
 .sec-heading-centered {
   max-width: 550px;
@@ -7529,7 +7506,7 @@ START: Heading CSS
   border-radius: 4px;
 }
 .sec-heading .sub-title i {
-  color: var(--tj-color-theme-primary);
+  color: #bd3698;
   font-size: 22px;
   line-height: 1;
   display: -webkit-inline-box;
@@ -7550,10 +7527,10 @@ START: Heading CSS
   }
 }
 .sec-heading.style-2 .sec-title span {
-  color: var(--tj-color-text-body-2);
+    color: #bd3698;
 }
 .sec-heading.style-2 .sub-title {
-  color: var(--tj-color-theme-primary);
+  color: #bd3698;
   background-color: var(--tj-color-common-white);
   border: 0;
   padding: 7px 10px;
@@ -7564,8 +7541,8 @@ START: Heading CSS
   border: 0;
 }
 .sec-heading.style-4 .sub-title {
-  color: var(--tj-color-theme-primary);
-  border-color: var(--tj-color-theme-primary);
+  color: #bd3698;
+  border-color: #bd3698;
 }
 .sec-heading.style-6 .sub-title {
   padding: 4px 8px;
@@ -7714,7 +7691,7 @@ START: Heading CSS
   position: relative;
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  color:#2d0533;
   --highlight-offset: 0%;
   background-image: -webkit-gradient(linear, left top, right top, from(var(--tj-color-heading-primary)), to(var(--tj-color-text-body-2)));
   background-image: linear-gradient(90deg, var(--tj-color-heading-primary) var(--highlight-offset), var(--tj-color-text-body-2) var(--highlight-offset));
@@ -9577,15 +9554,14 @@ START: About CSS
   font-weight: var(--tj-fw-medium);
 }
 .countup-item.style-2 .inline-content {
-  color: var(--tj-color-heading-primary);
+  color: #2d0533;
   margin: 11px 0 10px;
 }
 .countup-item.style-2 .inline-content .odometer {
   color: var(--tj-color-heading-primary);
 }
-.countup-item.style-2 .inline-content .odometer .odometer-digit,
-.countup-item.style-2 .inline-content .odometer span {
-  color: var(--tj-color-heading-primary);
+.countup-item.style-2 .inline-content .odometer .odometer-digit, .countup-item.style-2 .inline-content .odometer span {
+    color: #2d0533;
 }
 .countup-item.style-2 .count-icon {
   width: 80px;
@@ -9626,10 +9602,11 @@ START: About CSS
 }
 
 .tj-about-section-2 {
-  background-color: var(--tj-color-theme-bg);
-  border-radius: 12px;
-  position: relative;
-  z-index: 1;
+    background-color: #e4c6ff3b;
+    border-radius: 12px;
+    position: relative;
+    padding: 50px;
+    z-index: 1;
 }
 
 .progress-box {
@@ -9688,6 +9665,7 @@ START: Services CSS
     border-radius: 12px;
     position: relative;
     z-index: 1;
+    margin-top: 20px;
 }
 .tj-service-section .sec-heading {
   max-width: 550px;
@@ -9703,8 +9681,8 @@ START: Services CSS
           margin-inline-end: 0;
 }
 .tj-service-section .sec-heading.style-2 .sub-title {
-  color: var(--tj-color-theme-primary);
-  background-color: var(--tj-color-theme-dark-2);
+    color: var(--tj-color-theme-primary);
+    background-color: #fff;
 }
 .tj-service-section.service-2 {
   overflow-x: hidden;
@@ -9755,7 +9733,7 @@ START: Services CSS
   font-size: 70px;
   width: 80px;
   height: 80px;
-  background: linear-gradient(-45deg, rgba(30, 138, 138, 0.3) 0%, rgba(30, 138, 138, 0) 50%, rgba(30, 138, 138, 0.3) 100%);
+  background: linear-gradient(-45deg, #fff 0%, #f8f9fa 50%, #fff 100%); 
   border-radius: 50%;
   border: 1px solid rgba(30, 138, 138, 0.15);
   display: -webkit-inline-box;
@@ -9775,7 +9753,7 @@ START: Services CSS
   transition: all 0.4s ease-in-out;
 }
 .service-item .service-icon i {
-  color: var(--tj-color-theme-primary);
+  color: #bd3698;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -9794,7 +9772,7 @@ START: Services CSS
   margin-bottom: 20px;
   -webkit-transition: none;
   transition: none;
-  color: #2d0533;
+  color: #1e8a8a;
 }
 .service-item .title a:hover {
   color: white;
@@ -9991,7 +9969,7 @@ START: Services CSS
 }
 .service-item.style-2 {
   background-color: transparent;
-  border: 1px dashed var(--tj-color-border-2);
+  border: 1px dashed #bd3698;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   padding: 65px 50px;
@@ -10031,7 +10009,7 @@ START: Services CSS
   }
 }
 .service-item.style-2 .desc {
-  color: var(--tj-color-text-body-2);
+  color: #bd3698;
   margin-bottom: 22px;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -10043,7 +10021,7 @@ START: Services CSS
   color: var(--tj-color-text-body-2);
 }
 .service-item.style-2:hover {
-  background-color: var(--tj-color-theme-dark-2);
+  background-color: #e4c6ff3b;
   border-color: var(--tj-color-theme-dark-2);
 }
 .service-item.style-2:hover .service-icon i {
@@ -10149,7 +10127,7 @@ START: Services CSS
   list-style: none;
 }
 .list-items li {
-  color: var(--tj-color-text-body);
+  color:#bd3698;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11786,7 +11764,7 @@ START: Testimonial CSS
   margin-top: 55px;
 }
 .swiper-pagination-area.white-pagination .swiper-pagination-bullet {
-  background-color: #2d0533;
+  background-color: #bd3698;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .swiper-pagination-area {
@@ -12656,7 +12634,7 @@ START: Countup CSS
 .inline-content .odometer .odometer-digit,
 .inline-content .odometer span {
   font-weight: var(--tj-fw-medium);
-  color: var(--tj-color-common-white);
+  color:#bd3698;
   font-family: var(--tj-ff-heading);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -13684,15 +13662,15 @@ START: Theme Slider CSS
   z-index: 1;
 }
 .tj-slider-item::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  inset-inline-start: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgb(12, 30, 33)), color-stop(60%, rgba(12, 30, 33, 0.4)), to(rgba(12, 30, 33, 0.1)));
-  background: linear-gradient(90deg, rgb(12, 30, 33) 20%, rgba(12, 30, 33, 0.4) 60%, rgba(12, 30, 33, 0.1) 100%);
+    position: absolute;
+    content: "";
+    top: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgb(12, 30, 33)), color-stop(60%, rgba(12, 30, 33, 0.4)), to(rgba(12, 30, 33, 0.1)));
+    background: linear-gradient(90deg, rgb(45 5 51) 20%, rgba(12, 30, 33, 0.4) 60%, rgba(12, 30, 33, 0.1) 100%);
 }
 .tj-slider-item .slider-wrapper {
   padding: 195px 0 347px;
@@ -13725,14 +13703,14 @@ START: Theme Slider CSS
   max-width: 660px;
 }
 .tj-slider-item .slider-content .slider-title {
-  color: var(--tj-color-text-body-2);
+  color: #bd3698;
   font-size: 46px;
   line-height: 1.042;
   letter-spacing: -2.88px;
   margin-bottom: 10px;
 }
 .tj-slider-item .slider-content .slider-title span {
-  color: #2d0533;
+  color: #bd3698;
 }
 .tj-slider-item .slider-content .slider-title img {
   max-width: 188px;
@@ -13779,7 +13757,7 @@ START: Theme Slider CSS
   max-width: 440px;
   font-size: 18px;
   line-height: 1.444;
-  color: var(--tj-color-text-body-2);
+  color: #fff;
 }
 .tj-slider-item .slider-content .slider-btn {
   margin-top: 25px;
@@ -17367,7 +17345,7 @@ START: Services CSS
 }
 
 .service-item.style-5 {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #e4c6ff3b;;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17515,7 +17493,7 @@ padding: 80px;
   vertical-align: middle;
 }
 .service-bottom-text a {
-  color: var(--tj-color-theme-dark);
+  color:#bd3698;
   font-weight: var(--tj-fw-sbold);
   line-height: 1.1;
   position: relative;
@@ -21111,7 +21089,7 @@ START: Choose CSS
 START: Home 5 About CSS
 ----------------------------------------*/
 .h6-about {
-  background-color: var(--tj-color-theme-dark);
+  background-color:#2d0533;
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -23464,7 +23442,7 @@ START: CTA CSS
   margin-bottom: 15px;
 }
 .h7-cta-inner {
-  background-color: transparent;
+  background-color: #2d0533;
 }
 .h7-cta-inner .cta-content {
   display: -webkit-box;
