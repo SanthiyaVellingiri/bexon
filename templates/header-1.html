@@ -9,13 +9,13 @@
           <div class="header-wrapper">
             <!-- site logo -->
 <div class="site_logo d-flex align-items-center">
-  <a class="logo" href="{% url 'index' %}">
+  <!-- <a class="logo" href="{% url 'index' %}">
     <img src="{% static 'images/logos/Techssoft logo.png' %}" alt="Techssoft logo" 
          style="height:40px; width:auto;">
-  </a> 
+  </a>  -->
   <a href="{% url 'index' %}">
     <div class="d-flex align-items-center">
-      <h4 style="color:#1e8a8a; margin:0;">TECHFASHION</h4>
+      <h4 style="color:#bd3698; margin:0;">TECHFASHION</h4>
       <!-- <h6 style="color:#627474; font-size:15px; margin:0;">Innovations</h6> -->
     </div>
   </a>
@@ -44,11 +44,12 @@
             <div class="header-right-item d-none d-lg-inline-flex">
              
               <div class="header-button">
-                <a class="tj-primary-btn" href="{% url 'contact' %}">
-                  <span class="btn-text"><span>Let’s Talk</span></span>
-                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                </a>
-              </div>
+  <a class="tj-primary-btn" href="{% url 'contact' %}" style="background-color:#2d0533;">
+    <span class="btn-text"><span>Let’s Talk</span></span>
+    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+  </a>
+</div>
+
              
             </div>
 
@@ -77,7 +78,7 @@
             <div class="site_logo">
               {% comment %} <a class="logo" href="{% url 'index' %}"><img src="{% static 'images/logos/logo-2.webp' %}" alt=""></a> {% endcomment %}
              <a href="{% url 'index' %}"> <div class=" d-flex align-items-center">
-                        <h4 style="color: #1e8a8a;">TECHFASHION </h4><h6 style="color:#627474; font-size:15px;margin:0;">Innovations</h6>
+                        <h4 style="color: #bd3698;">TECHFASHION </h4><h6 style="color:#627474; font-size:15px;margin:0;">Innovations</h6>
                       </div> </a>
             </div>
 
@@ -100,12 +101,13 @@
             <!-- header right info -->
             <div class="header-right-item d-none d-lg-inline-flex">
              
-              <div class="header-button">
-                <a class="tj-primary-btn" href="{% url 'contact' %}">
-                  <span class="btn-text"><span>Let’s Talk</span></span>
-                  <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                </a>
-              </div>
+            <div class="header-button">
+  <a class="tj-primary-btn" href="{% url 'contact' %}" style="background-color:#2d0533;">
+    <span class="btn-text"><span>Let’s Talk</span></span>
+    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+  </a>
+</div>
+
              
             </div>
 

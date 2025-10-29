@@ -7,194 +7,251 @@
   <div id="smooth-content">
     <main id="primary" class="site-main">
       <div class="top-space-15"></div>
-      <!-- start: Banner Slider -->
-      <section class="tj-slider-section">
-        <div class="swiper hero-slider" style="height: 780px">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide tj-slider-item">
-              <div
-                class="slider-bg-image"
-                data-bg-image="{% static 'images/ai.jpg' %}"
-              ></div>
-              <div class="container" style="margin-top: 120px;">
-                <div class="slider-wrapper">
-                  <div class="slider-content">
-                    <h1 class="slider-title">
-                     About <span>Techssoft</span>
-                    </h1>
-                    <div class="slider-desc" style="text-align: justify;">
-                     Techssoft is a leading provider of artificial intelligence solutions that cater to various industries such as healthcare, finance, retail, and manufacturing. Our mission is to revolutionize these industries by developing innovative AI algorithms and software solutions that enhance efficiency and productivity.
-                    </div>
-                    <div class="slider-btn">
-                      <a class="tj-primary-btn" href="{% url 'contact' %}">
-                        <span class="btn-text"><span>Get Started</span></span>
-                        <span class="btn-icon"
-                          ><i class="tji-arrow-right-long"></i
-                        ></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+<!-- start: Banner Slider -->
+<section class="tj-slider-section">
+  <div class="swiper hero-slider" style="height: 780px">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide tj-slider-item">
+        <div
+          class="slider-bg-image"
+          data-bg-image="{% static 'images/aii.png' %}"
+        ></div>
+        <div class="container" style="margin-top: 120px;">
+          <div class="slider-wrapper">
+            <div class="slider-content">
+              <h1 class="slider-title">
+                About <span>VogueVista</span>
+              </h1>
+              <div class="slider-desc" style="text-align: justify;">
+                VogueVista is a modern fashion brand redefining contemporary style. We blend elegance and creativity to design clothing that empowers confidence and individuality. From casual wear to couture, our collections bring sophistication and comfort together.
               </div>
-            </div>
-            <div class="swiper-slide tj-slider-item">
-              <div
-                class="slider-bg-image"
-                data-bg-image="{% static 'images/hero/slider-2.webp' %}"
-              ></div>
-              <div class="container" style="margin-top: 120px;">
-                <div class="slider-wrapper">
-                  <div class="slider-content">
-                    <h1 class="slider-title">
-                     Expertise & <span>Innovation</span>
-                    </h1>
-                    <div class="slider-desc" style="text-align: justify;">
-                     We are constantly exploring new techniques and methodologies to provide innovative solutions for our clients. Our team consists of seasoned professionals with deep expertise in software development and artificial intelligence.
-                    </div>
-                    <div class="slider-btn">
-                      <a class="tj-primary-btn" href="{% url 'contact' %}">
-                        <span class="btn-text"><span>Get Started</span></span>
-                        <span class="btn-icon"
-                          ><i class="tji-arrow-right-long"></i
-                        ></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+              <div class="slider-btn">
+                <a class="tj-primary-btn" href="{% url 'contact' %}" style="background-color:#2d0533;">
+                  <span class="btn-text"><span>Shop Now</span></span>
+                  <span class="btn-icon">
+                    <i class="tji-arrow-right-long"></i>
+                  </span>
+                </a>
               </div>
-            </div>
-            <div class="swiper-slide tj-slider-item">
-              <div
-                class="slider-bg-image"
-                data-bg-image="{% static 'images/hero/slider-3.webp' %}"
-              ></div>
-              <div class="container" style="margin-top: 120px;">
-                <div class="slider-wrapper">
-                  <div class="slider-content">
-                    <h1 class="slider-title">
-                     Resources<span></span>
-                    </h1>
-                    <div class="slider-desc" style="text-align: justify;">
-                    Stay up to date with the latest AI trends and news by reading our blog. Our blog features content from the most prominent experts in the field.
-                    </div>
-                    <div class="slider-btn">
-                      <a class="tj-primary-btn" href="{% url 'contact' %}">
-                        <span class="btn-text"><span>Get Started</span></span>
-                        <span class="btn-icon"
-                          ><i class="tji-arrow-right-long"></i
-                        ></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="hero-navigation d-inline-flex wow fadeIn"
-            data-wow-delay="1.5s"
-          >
-            <div class="slider-prev">
-              <span class="anim-icon">
-                <i class="tji-arrow-left"></i>
-                <i class="tji-arrow-left"></i>
-              </span>
-            </div>
-            <div class="slider-next">
-              <span class="anim-icon">
-                <i class="tji-arrow-right"></i>
-                <i class="tji-arrow-right"></i>
-              </span>
             </div>
           </div>
         </div>
-      </section>
-      <!-- end: Banner Slider -->
+      </div>
 
-        <!-- start: About Section -->
-        <section class="tj-about-section section-gap">
-          <div class="container">
-            <div class="row row-gap-4">
-              <div class="col-lg-4 col-md-6 order-lg-1 order-3">
-                <div class="countup-item style-2 wow fadeInUp" data-wow-delay=".1s" data-bg-image="{% static 'images/service/service-6.webp'%}"  style="background-image: url('{% static 'images/service/service-6.webp' %}'); background-size: cover;">
-                  <span class="count-icon"><i class="tji-complete"></i></span>
-                  <div class="count-inner">
-                    <span class="count-text" style="color:white">Projects Completed.</span>
-                    <div class="inline-content">
-                      <span class="countup-number odometer odometer-auto-theme" data-count="600"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span>
-                      <span class="count-plus">+</span>
-                    </div>
-                  </div>
-                </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide tj-slider-item">
+        <div
+          class="slider-bg-image"
+          data-bg-image="{% static 'images/hero/slider11.png' %}"
+        ></div>
+        <div class="container" style="margin-top: 120px;">
+          <div class="slider-wrapper">
+            <div class="slider-content">
+              <h1 class="slider-title">
+                Style & <span>Craftsmanship</span>
+              </h1>
+              <div class="slider-desc" style="text-align: justify;">
+                Every VogueVista piece is crafted with precision, passion, and purpose. Our team of skilled designers and artisans bring timeless designs to life, ensuring the perfect blend of quality, comfort, and style for every occasion.
               </div>
-              <div class="col-lg-8 col-sm-12 order-lg-2 order-1">
-                <div class="about-content-area-2 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="about-content">
-                    <div class="sec-heading style-2">
-                      <span class="sub-title">About us</span>
-                      <h2 class="sec-title title-highlight"> Innovating Digital & Growth: Trusted Partner for Intelligent IT Solutions. 
-                      </h2>
-                    </div>
-                     <div class="slider-btn">
-                      <a class="tj-primary-btn" href="{% url 'about'%}">
-                        <span class="btn-text"><span>Learn More</span></span>
-                        <span class="btn-icon"
-                          ><i class="tji-arrow-right-long"></i
-                        ></span>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="video-img wow fadeInRight" data-wow-delay=".7s">
-                    <img src="{% static 'images/about/about-3.webp'%}" alt="Image">
-                    <a class="video-btn video-popup vbox-item" data-autoplay="true" data-vbtype="video" data-maxwidth="1200px" href="https://www.youtube.com/watch?v=MLpWrANjFbI&amp;ab_channel=eidelchteinadvogados">
-                      <span><i class="tji-play"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 order-lg-3 order-2">
-                <div class="customers-box style-2 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="customers-bg" data-bg-image="{% static 'images/about/about-4.webp'%}" style="background-image: url(&quot;{% static 'images/about/about-4.webp&quot;);'%}"></div>
-                  <div class="customers">
-                    <ul>
-                      <li class="wow fadeInLeft" data-wow-delay=".3s"><img src="{% static 'images/testimonial/client-1.webp'%}" alt=""></li>
-                      <li class="wow fadeInLeft" data-wow-delay=".4s"><img src="{% static 'images/testimonial/client-2.webp'%}" alt=""></li>
-                      <li class="wow fadeInLeft" data-wow-delay=".5s"><img src="{% static 'images/testimonial/client-3.webp'%}" alt=""></li>
-                      <li class="wow fadeInLeft" data-wow-delay=".6s"><span><i class="tji-plus"></i></span></li>
-                    </ul>
-                  </div>
-                  <h6 class="customers-text wow fadeInLeft" data-wow-delay=".6s">We have 400+ happy customer.</h6>
-                  <div class="star-icon zoomInOut"><img src="{% static 'images/shape/star.svg'%}" alt=""></div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 order-lg-4 order-4"   >
-                <div class="countup-item style-2 wow fadeInUp" data-wow-delay=".5s" data-bg-image="{% static 'images/history-6.webp'%}"  style="background-image: url('{% static 'images/history-6.webp' %}'); background-size: cover;">
-                  <span class="count-icon"><i class="tji-worldwide"></i></span>
-                  <div class="count-inner">
-                    <span class="count-text"  style="color:white">Reach Worldwide</span>
-                    <div class="inline-content">
-                      <span class="countup-number odometer odometer-auto-theme" data-count="20"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span>
-                      <span class="count-plus">M</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 order-lg-5 order-5">
-                <div class="countup-item style-2 wow fadeInUp" data-wow-delay=".7s" data-bg-image="{% static 'images/history-7.webp'%}"  style="background-image: url('{% static 'images/history-7.webp' %}'); background-size: cover;">
-                  <span class="count-icon"><i class="tji-growth"></i></span>
-                  <div class="count-inner">
-                    <span class="count-text"  style="color:white">Faster Growth</span>
-                    <div class="inline-content">
-                      <span class="countup-number odometer odometer-auto-theme" data-count="8.5"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span>
-                      <span class="count-plus">X</span>
-                    </div>
-                  </div>
-                </div>
+              <div class="slider-btn">
+                <a class="tj-primary-btn" href="{% url 'contact' %}" style="background-color:#2d0533;">
+                  <span class="btn-text"><span>Explore Collection</span></span>
+                  <span class="btn-icon">
+                    <i class="tji-arrow-right-long"></i>
+                  </span>
+                </a>
               </div>
             </div>
           </div>
-        </section>
-        <!-- end: About Section -->
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide tj-slider-item">
+        <div
+          class="slider-bg-image"
+          data-bg-image="{% static 'images/hero/slider22.png' %}"
+        ></div>
+        <div class="container" style="margin-top: 120px;">
+          <div class="slider-wrapper">
+            <div class="slider-content">
+              <h1 class="slider-title">
+                Trends & <span>Inspiration</span>
+              </h1>
+              <div class="slider-desc" style="text-align: justify;">
+                Stay inspired with VogueVista. From seasonal collections to the latest fashion trends, we bring you a curated experience of modern aesthetics and timeless beauty. Discover what’s next in the world of fashion.
+              </div>
+              <div class="slider-btn">
+                <a class="tj-primary-btn" href="{% url 'contact' %}" style="background-color:#2d0533;">
+                  <span class="btn-text"><span>Discover More</span></span>
+                  <span class="btn-icon">
+                    <i class="tji-arrow-right-long"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-navigation d-inline-flex wow fadeIn" data-wow-delay="1.5s">
+      <div class="slider-prev">
+        <span class="anim-icon">
+          <i class="tji-arrow-left"></i>
+          <i class="tji-arrow-left"></i>
+        </span>
+      </div>
+      <div class="slider-next">
+        <span class="anim-icon">
+          <i class="tji-arrow-right"></i>
+          <i class="tji-arrow-right"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end: Banner Slider -->
+
+
+<!-- start: About Section -->
+<section class="tj-about-section section-gap">
+  <div class="container">
+    <div class="row row-gap-4">
+      <!-- Fashion Projects -->
+      <div class="col-lg-4 col-md-6 order-lg-1 order-3">
+        <div class="countup-item style-2 wow fadeInUp" data-wow-delay=".1s" data-bg-image="{% static 'images/service/Service-6.png'%}"  style="background-image: url('{% static 'images/service/Service-6.png' %}');background-size: cover; background-position: center center;">
+          <span class="count-icon"><i class="tji-tshirt"></i></span>
+          <div class="count-inner">
+            <span class="count-text" style="color:white">Designs Launched</span>
+            <div class="inline-content">
+              <span class="countup-number odometer odometer-auto-theme" data-count="600">
+                <div class="odometer-inside">
+                  <span class="odometer-digit">
+                    <span class="odometer-digit-spacer">8</span>
+                    <span class="odometer-digit-inner">
+                      <span class="odometer-ribbon">
+                        <span class="odometer-ribbon-inner">
+                          <span class="odometer-value">0</span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </span>
+              <span class="count-plus">+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Fashion Brand -->
+      <div class="col-lg-8 col-sm-12 order-lg-2 order-1">
+        <div class="about-content-area-2 wow fadeInUp" data-wow-delay=".3s">
+          <div class="about-content">
+            <div class="sec-heading style-2">
+              <span class="sub-title">About Us</span>
+              <h2 class="sec-title title-highlight">
+                Redefining Fashion with Style, Sustainability & Innovation.
+              </h2>
+            </div>
+<div class="slider-btn">
+  <a class="tj-primary-btn" href="{% url 'about' %}" 
+     style="background-color: #2d0533; border-color: #2d0533; color: #fff;">
+    <span class="btn-text"><span>Explore More</span></span>
+    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+  </a>
+</div>
+
+          </div>
+          <div class="video-img wow fadeInRight" data-wow-delay=".7s">
+            <img src="{% static 'images/about/about-3.webp'%}" alt="Fashion Show">
+            <a class="video-btn video-popup vbox-item" data-autoplay="true" data-vbtype="video" data-maxwidth="1200px" href="https://www.youtube.com/watch?v=MLpWrANjFbI&amp;ab_channel=fashiontv">
+              <span><i class="tji-play"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Happy Customers -->
+      <div class="col-lg-4 col-md-6 order-lg-3 order-2">
+        <div class="customers-box style-2 wow fadeInUp" data-wow-delay=".3s">
+          <div class="customers-bg" data-bg-image="{% static 'images/about/About-4.png'%}" style="background-image: url('{% static 'images/about/about-4.webp' %}'); background-size: cover; background-position: center center;"></div>
+          <div class="customers">
+            <ul>
+              <li class="wow fadeInLeft" data-wow-delay=".3s"><img src="{% static 'images/testimonial/client-1.webp'%}" alt=""></li>
+              <li class="wow fadeInLeft" data-wow-delay=".4s"><img src="{% static 'images/testimonial/client-2.webp'%}" alt=""></li>
+              <li class="wow fadeInLeft" data-wow-delay=".5s"><img src="{% static 'images/testimonial/client-3.webp'%}" alt=""></li>
+              <li class="wow fadeInLeft" data-wow-delay=".6s"><span><i class="tji-plus"></i></span></li>
+            </ul>
+          </div>
+          <h6 class="customers-text wow fadeInLeft" data-wow-delay=".6s">Over 400+ happy fashion lovers worldwide.</h6>
+          <div class="star-icon zoomInOut"><img src="{% static 'images/shape/star.svg'%}" alt=""></div>
+        </div>
+      </div>
+
+      <!-- Global Presence -->
+      <div class="col-lg-4 col-md-6 order-lg-4 order-4">
+        <div class="countup-item style-2 wow fadeInUp" data-wow-delay=".5s" data-bg-image="{% static 'images/about/About-5.jpg'%}"  style="background-image: url('{% static 'images/about/About-5.jpg' %}'); background-size: cover;">
+          <span class="count-icon"><i class="tji-globe"></i></span>
+          <div class="count-inner">
+            <span class="count-text" style="color:white">Global Reach</span>
+            <div class="inline-content">
+              <span class="countup-number odometer odometer-auto-theme" data-count="20">
+                <div class="odometer-inside">
+                  <span class="odometer-digit">
+                    <span class="odometer-digit-spacer">8</span>
+                    <span class="odometer-digit-inner">
+                      <span class="odometer-ribbon">
+                        <span class="odometer-ribbon-inner">
+                          <span class="odometer-value">0</span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </span>
+              <span class="count-plus">+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Growth -->
+      <div class="col-lg-4 col-md-6 order-lg-5 order-5">
+        <div class="countup-item style-2 wow fadeInUp" data-wow-delay=".7s" data-bg-image="{% static 'images/about/About-6.jpg'%}"  style="background-image: url('{% static 'images/about/About-6.jpg' %}'); background-size: cover;">
+          <span class="count-icon"><i class="tji-trending-up"></i></span>
+          <div class="count-inner">
+            <span class="count-text" style="color:white">Yearly Brand Growth</span>
+            <div class="inline-content">
+              <span class="countup-number odometer odometer-auto-theme" data-count="8.5">
+                <div class="odometer-inside">
+                  <span class="odometer-digit">
+                    <span class="odometer-digit-spacer">8</span>
+                    <span class="odometer-digit-inner">
+                      <span class="odometer-ribbon">
+                        <span class="odometer-ribbon-inner">
+                          <span class="odometer-value">0</span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </span>
+              <span class="count-plus">X</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end: About Section -->
+
 
 
       <!-- start: Client Section -->
@@ -404,133 +461,173 @@
 
      
 
-       <!-- start: Service Section -->
+<!-- start: Service Section -->
+<section class="tj-service-section overflow-hidden section-gap section-gap-x" style="background-color: #2d0533;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sec-heading text-center">
+          <span class="sub-title text-white wow fadeInUp" data-wow-delay=".3s"
+            style="font-size: 23px; color: #2d0533 !important; background: rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(10px);">
+            <i class="tji-box"></i>Our Collections
+          </span>
+          <h3 class="sec-title title-anim" style="color:white">
+            Discover <span style="color:#1e8a8a"> Fashion Styles </span> Crafted for Every Occasion
+          </h3>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <section class="tj-service-section overflow-hidden section-gap section-gap-x">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="sec-heading text-center">
+  <div class="container-fluid p-0">
+    <div class="row">
+      <div class="col-12">
+        <div class="service-wrapper wow fadeInUp" data-wow-delay=".4s">
+          <div class="swiper service-slider">
+            <div class="swiper-wrapper">
 
-                  <span class="sub-title text-white wow fadeInUp" data-wow-delay=".3s" style="font-size: 23px; color: #1e8a8a ! important; background: rgba(255, 255, 255, 0.1); 
-                             backdrop-filter: blur(10px);"><i class="tji-box"></i>Our
-                    Services</span>
-                    <h3 class="sec-title title-anim" style="color:white">Expert <span style="color:#1e8a8a"> IT Services </span>Designed
-                           To Elevate Your Business
-                    </h3>
-                    <br/>
-                  
+              <!-- 1 -->
+              <div class="swiper-slide">
+                <div class="service-item style-1">
+                  <div class="service-img">
+                    <img src="{% static 'images/service/sservice-2.jpg' %}" alt="">
+                  </div>
+                  <div class="service-icon">
+                    <i class="tji-service-4"></i>
+                  </div>
+                  <div class="service-content">
+                    <h4 class="title">
+                      <a href="{% url 'services' %}" style="color:#1e8a8a">Luxury Apparel</a>
+                    </h4>
+                    <p class="desc">
+                      Explore our premium collection of designer wear crafted with elegance and attention to detail. From evening gowns to statement outfits, our designs redefine sophistication.
+                    </p>
+                    <a class="text-btn" href="{% url 'services' %}">
+                      <span class="btn-text"><span>Learn More</span></span>
+                      <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="container-fluid p-0">
-            <div class="row">
-              <div class="col-12">
-                <div class="service-wrapper wow fadeInUp" data-wow-delay=".4s">
-                  <div class="swiper service-slider swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                    <div class="swiper-wrapper" id="swiper-wrapper-b8b32318b99daaa9" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-928.75px, 0px, 0px);">
-                      <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" role="group" aria-label="3 / 4" style="width: 356.5px; margin-right: 15px;">
-                    </div>
-                      
-                      
-                    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 356.5px; margin-right: 15px;">
-                       <div class="service-item style-1">
-                          <div class="service-img">
-                            <img src=" {% static  'images/service/service-7.webp' %}" alt="">
-                          </div>
-                           <div class="service-icon">
-                            <i class="tji-service-4"></i>
-                          </div>
-                         
-                          <div class="service-content">
-                            <h4 class="title"><a href="{% url 'services' %}" style="color:#1e8a8a">Artificial Intelligence</a></h4>
-                            <p class="desc">We build AI solutions that automate tasks, extract insights, and boost decision-making. From chatbots to predictive analytics, our tech transforms the way businesses operate.
 
-                               </p>
-                            <a class="text-btn" href="{% url 'services' %}">
-                              <span class="btn-text"><span>Learn More</span></span>
-                              <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 4" style="width: 356.5px; margin-right: 15px;">
-                       <div class="service-item style-1">
-                          <div class="service-img">
-                            <img src=" {% static  'images/service/service-1.webp' %}" alt="">
-                          </div>
-                           <div class="service-icon">
-                            <i class="tji-service-1"></i>
-                          </div>
-                         
-                          <div class="service-content">
-                            <h4 class="title"><a href="{% url 'services' %}" style="color:#1e8a8a">Software Development</a></h4>
-                            <p class="desc">We develop custom software solutions to streamline operations and boost efficiency. From ERP and CRM systems to fully tailored applications, we bring your ideas to life.</p>
-                            <a class="text-btn" href="{% url 'services' %}">
-                              <span class="btn-text"><span>Learn More</span></span>
-                              <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" role="group" aria-label="3 / 4" style="width: 356.5px; margin-right: 15px;">
-                        <div class="service-item style-1">
-                          <div class="service-img">
-                            <img src=" {% static  'images/service/service-6.webp' %}" alt="">
-                          </div>
-                            <div class="service-icon">
-                            <i class="tji-service-3"></i>
-                          </div>
-                          
-                          <div class="service-content">
-                            <h4 class="title"><a href="{% url 'services' %}" style="color:#1e8a8a">Website Development </a></h4>
-                            <p class="desc">We create high-quality, interactive websites tailored to your business goals. Using the latest tech and agile methods, we deliver fast, responsive, and engaging sites.</p>
-                            <a class="text-btn" href="{% url 'services' %}">
-                              <span class="btn-text"><span>Learn More</span></span>
-                              <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                        <div class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 356.5px; margin-right: 15px;">
-                       <div class="service-item style-1">
-                          <div class="service-img">
-                            <img src=" {% static  'images/service/service-5.webp' %}" alt="">
-                          </div>
-                           <div class="service-icon">
-                            <i class="tji-service-2"></i>
-                          </div>
-                          
-                          <div class="service-content">
-                            <h4 class="title"><a href="{% url 'services' %}" style="color:#1e8a8a">Application Development</a></h4>
-                            <p class="desc">We build user-friendly, high-quality mobile apps tailored to your business needs. Our innovative and affordable solutions ensure seamless access for your customers.</p>
-                            <a class="text-btn" href="{% url 'services' %}">
-                              <span class="btn-text"><span>Learn More</span></span>
-                              <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-pagination-area white-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
-                      <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span>
-                      <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-                      <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
-                    </div>
-                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+              <!-- 2 -->
+              <div class="swiper-slide">
+                <div class="service-item style-1">
+                  <div class="service-img">
+                    <img src="{% static 'images/service/sservice-1.jpg' %}" alt="">
+                  </div>
+                  <div class="service-icon">
+                    <i class="tji-service-1"></i>
+                  </div>
+                  <div class="service-content">
+                    <h4 class="title">
+                      <a href="{% url 'services' %}" style="color:#1e8a8a">Custom Tailoring</a>
+                    </h4>
+                    <p class="desc">
+                      Our bespoke tailoring service allows you to create perfectly fitted outfits that match your personality and taste, made from the finest fabrics with flawless craftsmanship.
+                    </p>
+                    <a class="text-btn" href="{% url 'services' %}">
+                      <span class="btn-text"><span>Learn More</span></span>
+                      <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                    </a>
+                  </div>
                 </div>
               </div>
+
+              <!-- 3 -->
+              <div class="swiper-slide">
+                <div class="service-item style-1">
+                  <div class="service-img">
+                    <img src="{% static 'images/service/sservice-3.jpg' %}" alt="">
+                  </div>
+                  <div class="service-icon">
+                    <i class="tji-service-3"></i>
+                  </div>
+                  <div class="service-content">
+                    <h4 class="title">
+                      <a href="{% url 'services' %}" style="color:#1e8a8a">Casual Collection</a>
+                    </h4>
+                    <p class="desc">
+                      Experience comfort and style with our casual fashion range. From trendy streetwear to cozy daily wear, each piece reflects effortless fashion for modern lifestyles.
+                    </p>
+                    <a class="text-btn" href="{% url 'services' %}">
+                      <span class="btn-text"><span>Learn More</span></span>
+                      <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4 -->
+              <div class="swiper-slide">
+                <div class="service-item style-1">
+                  <div class="service-img">
+                    <img src="{% static 'images/service/sservice-4.jpg' %}" alt="">
+                  </div>
+                  <div class="service-icon">
+                    <i class="tji-service-2"></i>
+                  </div>
+                  <div class="service-content">
+                    <h4 class="title">
+                      <a href="{% url 'services' %}" style="color:#1e8a8a">Accessories</a>
+                    </h4>
+                    <p class="desc">
+                      Complete your look with our stunning accessories — from handbags to scarves and jewelry, our collection adds a perfect touch of glamour to any outfit.
+                    </p>
+                    <a class="text-btn" href="{% url 'services' %}">
+                      <span class="btn-text"><span>Learn More</span></span>
+                      <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5 (NEW ADDED) -->
+              <div class="swiper-slide">
+                <div class="service-item style-1">
+                  <div class="service-img">
+                    <img src="{% static 'images/service/sservice-5.jpg' %}" alt="">
+                  </div>
+                  <div class="service-icon">
+                    <i class="tji-service-5"></i>
+                  </div>
+                  <div class="service-content">
+                    <h4 class="title">
+                      <a href="{% url 'services' %}" style="color:#1e8a8a">Bridal Collection</a>
+                    </h4>
+                    <p class="desc">
+                      Step into your dream day with our exquisite bridal wear collection. Each gown is designed to celebrate beauty, elegance, and individuality with timeless charm.
+                    </p>
+                    <a class="text-btn" href="{% url 'services' %}">
+                      <span class="btn-text"><span>Learn More</span></span>
+                      <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
             </div>
+
+            <!-- pagination -->
+            <div class="swiper-pagination-area white-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
+
           </div>
-          <div class="bg-shape-1">
-            <img src=" {% static  'images/shape/pattern-2.svg' %}" alt="">
-          </div>
-          <div class="bg-shape-2">
-            <img src=" {% static  'images/shape/pattern-3.svg' %}" alt="">
-          </div>
-        </section>
-        <!-- end: Service Section -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-shape-1">
+    <img src="{% static 'images/shape/pattern-2.svg' %}" alt="">
+  </div>
+  <div class="bg-shape-2">
+    <img src="{% static 'images/shape/pattern-3.svg' %}" alt="">
+  </div>
+</section>
+<!-- end: Service Section -->
+
 
         <!-- start: Service Section -->
         <section class="tj-service-section service-2 section-gap section-gap-x slidebar-stickiy-container">
@@ -665,94 +762,87 @@
       <!-- end: Service Section -->
 
         <!-- start: Service Section -->
-        <section class="tj-about-section-2 section-gap section-gap-x">
+        <section class="tj-service-section-5 section-gap">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                <div class="sec-heading style-3 text-center">
-                  {% comment %} <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Our Solutions</span> {% endcomment %}
-                  <h2 class="sec-title title-anim" style="color: #1e8a8a;font-size:35px">Empowering Enterprises with <span style="color:black">Techssoft</span> IT Solutions.</h2>
+                <div class="sec-heading style-4 text-center">
+                  <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Our Solutions</span>
+                  <h2 class="sec-title title-anim">Tailor Business Solutions for Corporates.</h2>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-12">
                 <div class="service-wrapper">
-                  <div class="service-item style-3 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="service-content-wrap">
-                      <div class="service-title">
-                        <div class="service-icon">
-                          <i class="tji-service-1"></i>
-                        </div>
-                        <h4 class="title"><a href="{% url 'services' %}">Business Strategy Development</a></h4>
+                  <div class="service-item style-5 service-stack">
+                    <div class="service-content-area">
+                      <div class="service-icon">
+                        <i class="tji-service-1"></i>
                       </div>
                       <div class="service-content">
+                        <span class="no">01.</span>
+                        <h3 class="title"><a href="service-details.html">Business Strategy Development</a></h3>
                         <p class="desc">Through a combination of data-driven insights and innovative approaches, we work
                           closely with you to develop customized.</p>
+                        <a class="tj-primary-btn" href="service-details.html">
+                          <span class="btn-text"><span>Learn More</span></span>
+                          <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                        </a>
                       </div>
                     </div>
-                    <div class="service-reveal-bg" data-bg-image="{% static 'images/service/service-2.webp'%}" style="background-image: url(&quot;{% static 'images/service/service-2.webp'%}&quot;);"></div>
+                    <div class="service-img">
+                      <img src="assets/images/service/service-6.webp" alt="">
+                    </div>
                   </div>
-                   <div class="service-item style-3 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="service-content-wrap">
-                      <div class="service-title">
-                        <div class="service-icon">
-                          <i class="tji-service-1"></i>
-                        </div>
-                        <h4 class="title"><a href="{% url 'services' %}">Digital Transformation</a></h4>
+                  <div class="service-item style-5 service-stack">
+                    <div class="service-content-area">
+                      <div class="service-icon">
+                        <i class="tji-service-2"></i>
                       </div>
                       <div class="service-content">
-                        <p class="desc">Leveraging automation, AI, and modern IT frameworks to streamline processes, enhance customer experience, 
-                          and boost overall productivity.</p>
+                        <span class="no">02.</span>
+                        <h3 class="title"><a href="service-details.html">Customer Experience Solutions</a></h3>
+                        <p class="desc">Customer Experience Solutions are designed to enhance every touchpoint of your
+                          customer journey, from first interaction.</p>
+                        <a class="tj-primary-btn" href="service-details.html">
+                          <span class="btn-text"><span>Learn More</span></span>
+                          <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                        </a>
                       </div>
                     </div>
-                    <div class="service-reveal-bg" data-bg-image="{% static 'images/service/service-2.webp'%}" style="background-image: url(&quot;{% static 'images/service/service-2.webp'%}&quot;);"></div>
+                    <div class="service-img">
+                      <img src="assets/images/service/service-1.webp" alt="">
+                    </div>
                   </div>
-                   <div class="service-item style-3 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="service-content-wrap">
-                      <div class="service-title">
-                        <div class="service-icon">
-                          <i class="tji-service-1"></i>
-                        </div>
-                        <h4 class="title"><a href="{% url 'services' %}">Advanced Cybersecurity</a></h4>
+                  <div class="service-item style-5">
+                    <div class="service-content-area">
+                      <div class="service-icon">
+                        <i class="tji-service-3"></i>
                       </div>
                       <div class="service-content">
-                        <p class="desc">Comprehensive protection with firewalls, intrusion detection, encryption, and compliance
-                           management to safeguard against evolving threats.</p>
+                        <span class="no">03.</span>
+                        <h3 class="title"><a href="service-details.html">Sustainability and ESG Consulting</a></h3>
+                        <p class="desc">Provide tailored strategies that not only drive long-term value but also build
+                          trust
+                          with stakeholders, investors.</p>
+                        <a class="tj-primary-btn" href="service-details.html">
+                          <span class="btn-text"><span>Learn More</span></span>
+                          <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                        </a>
                       </div>
                     </div>
-                    <div class="service-reveal-bg" data-bg-image="{% static 'images/service/service-6.webp'%}" style="background-image: url(&quot;{% static 'images/service/service-6.webp'%}&quot;);"></div>
-                  </div>
-                   <div class="service-item style-3 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="service-content-wrap">
-                      <div class="service-title">
-                        <div class="service-icon">
-                          <i class="tji-service-1"></i>
-                        </div>
-                        <h4 class="title"><a href="{% url 'services' %}">Cloud Services & Virtualization</a></h4>
-                      </div>
-                      <div class="service-content">
-                        <p class="desc">Secure, cost-effective cloud migration, hosting, and storage solutions that improve collaboration, accessibility, and operational agility.</p>
-                      </div>
+                    <div class="service-img">
+                      <img src="assets/images/service/service-7.webp" alt="">
                     </div>
-                    <div class="service-reveal-bg" data-bg-image="{% static 'images/service/service-4.webp'%}" style="background-image: url(&quot;{% static 'images/service/service-4.webp'%}&quot;);"></div>
                   </div>
-                 
                 </div>
-                <div class="service-btn-area text-center wow fadeInUp" data-wow-delay=".3s">
-                  <a class="tj-primary-btn" href="{% url 'services' %}" style="border-radius: 0px;">
-                    <span class="btn-text" ><span>More Services</span></span>
-                    <span class="btn-icon" style="border-radius: 0px;"><i class="tji-arrow-right-long"></i></span>
-                  </a>
+                <div class="service-bottom-text">
+                  <p class="desc"><span><i class="tji-box"></i>Unlock tailored solutions without the wasted effort. <a href="contact.html">Talk to us today</a></span>
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="bg-shape-1">
-            <img src="{% static 'images/shape/pattern-2.svg'%}" alt="">
-          </div>
-          <div class="bg-shape-2">
-            <img src="{% static 'images/shape/pattern-3.svg'%}" alt="">
           </div>
         </section>
         <!-- end: Service Section -->
@@ -1037,7 +1127,7 @@
 
 
            <!-- start: Client Section -->
-        <section class="tj-client-section-2 h6-client section-gap-x wow fadeInUp" data-wow-delay=".4s" style="margin-top:17px;">
+        <section class="tj-client-section-2 h6-client section-gap-x wow fadeInUp" data-wow-delay=".4s" style="margin-top:17px;"style="background-color: #2d0533">
           <div class="container-fluid client-container">
             <div class="row">
               <div class="col-12">

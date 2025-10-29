@@ -95,7 +95,7 @@ START: Theme Default CSS
   --tj-color-text-body-5: rgba(255, 255, 255, 0.8);
 
   /* 🌿 Theme Colors (updated with #2d0533) */
-  --tj-color-theme-primary: #2d0533;
+  --tj-color-theme-primary: #2d0533 ;
   --tj-color-theme-bg: #f3eaf5; /* soft tint background version */
   --tj-color-theme-bg-2: #e6d4eb; /* lighter variation */
   --tj-color-theme-bg-3: #2d0533; /* dark solid background */
@@ -718,28 +718,28 @@ img {
 /**
   Buttons CSS
 */
-.tj-primary-btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
-  position: relative;
-  background-color: var(--tj-color-theme-primary);
-  font-size: 16px;
-  font-weight: var(--tj-fw-sbold);
-  padding: 5px 5px 5px 25px;
-  text-align: center;
-
-  line-height: 1;
-  z-index: 2;
-  overflow: hidden;
-  white-space: nowrap;
+tj-primary-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    background-color: #2d0533;
+    font-size: 16px;
+    font-weight: var(--tj-fw-sbold);
+    padding: 5px 5px 5px 25px;
+    text-align: center;
+    line-height: 1;
+    z-index: 2;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .tj-primary-btn .btn-text {
   color: var(--tj-color-common-white);
@@ -3929,7 +3929,7 @@ START: Theme Search CSS
   position: relative;
 }
 .hamburger_menu .mean-nav ul li a {
-  color:#1e8a8a;
+  color:#2d0533;
   width: 100%;
   font-size: 16px;
   line-height: 1;
@@ -9684,10 +9684,10 @@ START: About CSS
 START: Services CSS
 ----------------------------------------*/
 .tj-service-section {
-  background-color: var(--tj-color-theme-dark);
-  border-radius: 12px;
-  position: relative;
-  z-index: 1;
+    background-color: #2d0533;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
 }
 .tj-service-section .sec-heading {
   max-width: 550px;
@@ -9794,7 +9794,7 @@ START: Services CSS
   margin-bottom: 20px;
   -webkit-transition: none;
   transition: none;
-  color: #1e8a8a;
+  color: #2d0533;
 }
 .service-item .title a:hover {
   color: white;
@@ -11786,7 +11786,7 @@ START: Testimonial CSS
   margin-top: 55px;
 }
 .swiper-pagination-area.white-pagination .swiper-pagination-bullet {
-  background-color: #1e8a8a;
+  background-color: #2d0533;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .swiper-pagination-area {
@@ -13732,7 +13732,7 @@ START: Theme Slider CSS
   margin-bottom: 10px;
 }
 .tj-slider-item .slider-content .slider-title span {
-  color: #1e8a8a;
+  color: #2d0533;
 }
 .tj-slider-item .slider-content .slider-title img {
   max-width: 188px;
